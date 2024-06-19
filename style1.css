@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 0 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+}
+
+.navbar li {
+    margin: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 15px 20px;
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ff6347; 
+}
+
+.content {
+    margin-top: 60px; 
+    padding: 10px;
+}
+
+/* Flexbox for section container */
+.section-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+
+.section-image {
+    width: 30%; 
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.section-text {
+    width: 70%; 
+}
+
+.section h1, .section h2 {
+    margin-top: 0;
+    color: #ff6347;
+}
+
+.section p {
+    line-height: 1.6;
+}
+
+.himage{
+    display: block;
+    margin: 0 auto;
+
+}
+.hom h1{
+    color: black;
+    font-size: 30px;
+}
+.hom{
+text-align:center;
+justify-content: center;
+width:60%;
+margin-left: 20%;
+margin-top:2%;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer h2 {
+    margin-top: 0;
+    color: #ff6347;
+}
+
+.footer p {
+    line-height: 1.6;
+}
+
+.footer-contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-contact-list li {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .section-container {
+        flex-direction: column;
+    }
+    
+    .section-image {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+    
+    .section-text {
+        width: 100%;
+    }
+
+    .hom {
+        width: 80%;
+        margin-left: 10%;
+    }
+    
+    .navbar ul {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .navbar li {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hom h1 {
+        font-size: 24px;
+    }
+    
+    .footer {
+        padding: 20px 10px;
+    }
+    
+    .footer-container {
+        padding: 0 10px;
+    }
+}
+
+body.scroll-0 .navbar {
+    background-color: #333; /* Default */
+}
+
+body.scroll-1 .navbar {
+    background-color: #4caf50; /* Nutrition */
+}
+
+body.scroll-2 .navbar {
+    background-color: #2196f3; /* Exercise */
+}
+
+body.scroll-3 .navbar {
+    background-color: #ffb647; /* Mindfulness */
+}
